@@ -57,6 +57,7 @@ class Timeago extends TimerRefreshWidget {
     required this.builder,
     required this.date,
     this.locale,
+     this.height,
     this.allowFromNow = false,
     this.clock,
     Duration refreshRate = const Duration(minutes: 1),
@@ -67,6 +68,7 @@ class Timeago extends TimerRefreshWidget {
   final DateTime? clock;
   final String? locale;
   final bool allowFromNow;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
